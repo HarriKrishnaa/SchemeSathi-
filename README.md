@@ -3,6 +3,7 @@
 A static HTML/CSS/JavaScript frontend that retrieves scheme records from an AWS API Gateway endpoint backed by AWS Lambda and DynamoDB. Designed for GitHub Pages and AWS Learner Lab evaluation.
 
 ## 🚀 Live Demo / Output
+Since it is Learners Lab AWS Project the module has to be started before launch the live website
 
 Check the live application output hosted on AWS S3:
 👉 **[View Live Demo on AWS S3](https://schemesathi-web-2026-hk.s3.us-east-1.amazonaws.com/SchemeSathi.html)**
