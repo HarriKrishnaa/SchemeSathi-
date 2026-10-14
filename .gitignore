@@ -1,0 +1,11 @@
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

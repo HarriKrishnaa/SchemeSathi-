@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SchemeSathi | Government Scheme Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+<div class="top"><div class="brand">Scheme<span>Sathi</span></div><button class="ghost" id="themeBtn" type="button" aria-label="Switch light or dark theme">🌙 Theme</button></div>
+<h1>Find the government schemes meant for you</h1>
+<p>Search by keyword, category, or state. Speak in English, Tamil, or Hindi.</p>
+</div></header>
+
+<main class="wrap">
+<section class="panel" aria-label="Scheme search">
+<div class="fields">
+<div><label for="keyword">Keyword</label><input id="keyword" type="search" placeholder="e.g. PM-KISAN, education, farmer"></div>
+<div><label for="state">State or All India</label><input id="state" list="states" placeholder="e.g. Tamil Nadu"><datalist id="states"><option>All India</option><option>Tamil Nadu</option><option>Kerala</option><option>Karnataka</option><option>Andhra Pradesh</option><option>Telangana</option><option>Maharashtra</option><option>Uttar Pradesh</option><option>Delhi</option><option>West Bengal</option><option>Gujarat</option><option>Rajasthan</option></datalist></div>
+<button class="primary" id="searchBtn" type="button">Search</button>
+</div>
+<div class="row">
+<button class="secondary mic" id="voiceBtn" type="button">🎙 Search by voice</button>
+<label for="voiceLang" style="margin:0">Voice language</label>
+<select id="voiceLang"><option value="en-IN">English (India)</option><option value="ta-IN">Tamil</option><option value="hi-IN">Hindi</option></select>
+<button class="secondary" id="clearBtn" type="button">Clear filters</button>
+</div>
+<div class="chips" id="chips" aria-label="Categories"></div>
+</section>
+<div class="status" id="status" role="status">Loading schemes…</div>
+
+<div class="bar">
+<div><h2 style="display:inline">Scheme results</h2><span id="count"></span></div>
+<div class="tools">
+<button class="secondary" id="savedBtn" type="button" aria-pressed="false">★ Saved (0)</button>
+<label for="sort" style="margin:0" class="sr">Sort</label>
+<select id="sort"><option value="">Sort: Default</option><option value="az">Name A–Z</option><option value="cat">Category</option></select>
+</div></div>
+<section id="results" class="grid" aria-live="polite"></section>
+</main>
+
+<footer class="wrap">Scheme details can change. Verify eligibility, benefits, documents, and dates on the official government portal before applying.</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
